@@ -7,7 +7,7 @@ import { setLoading, setData } from '../store/invoiceSlice';
 
 import HeaderMapper from './HeaderMapper';
 
-const API_URL = 'http://localhost:8000';
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 const fileIcons = {
   pdf: <FileText size={20} />,
